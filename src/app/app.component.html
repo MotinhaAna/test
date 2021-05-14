@@ -1,8 +1,16 @@
 <h1>Hello</h1>
 
 
-<form action="?" method="POST">
-  <div class="g-recaptcha" data-sitekey="6LesjdQaAAAAAL75h7LYH5jYsiLcr5sVacdnjTEP"></div>
-  <br />
-  <input type="submit" value="Submit">
-</form>
+
+<div id="cbCaptcha" style="padding-top: 6px; padding-bottom: 6px">
+
+  <script type="text/javascript"
+    src="https://www.google.com/recaptcha/api/challenge?k=6LesjdQaAAAAAL75h7LYH5jYsiLcr5sVacdnjTEP"></script>
+  <noscript>
+    <iframe frameborder="1"
+      src="https://www.google.com/recaptcha/api/noscript?k=6LesjdQaAAAAAL75h7LYH5jYsiLcr5sVacdnjTEP"></iframe>
+    <br />
+    <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+    <input type="hidden" name="recaptcha_response_field" value="manual_challenge" />
+  </noscript>
+</div>
